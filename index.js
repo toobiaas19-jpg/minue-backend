@@ -26,9 +26,9 @@ app.post('/crear-pago', async (req, res) => {
       body: JSON.stringify({
         items: mpItems,
         back_urls: {
-          success: 'https://alfajoresminue.netlify.app/?pago=ok',
-          failure: 'https://alfajoresminue.netlify.app/?pago=error',
-          pending: 'https://alfajoresminue.netlify.app/?pago=pendiente'
+          success: 'https://alfajoresminue.netlify.app/',
+          failure: 'https://alfajoresminue.netlify.app/',
+          pending: 'https://alfajoresminue.netlify.app/'
         },
         auto_return: 'approved',
         statement_descriptor: 'MINUE Alfajores'
